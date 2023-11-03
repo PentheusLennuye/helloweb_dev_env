@@ -1,0 +1,4 @@
+ZSH_THEME="agnoster"
+ENABLE_CORRECTION="false"
+plugins=(git copyfile extract colorize dotenv encode64 golang)
+source $ZSH/oh-my-zsh.sh

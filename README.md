@@ -4,11 +4,14 @@ Builds, publishes and tags the HelloWeb Development Environment to ensure that
 all HelloWeb builders (including automated ones) run off a common build
 environment.
 
-To build and publish:
+To build, flatten, and publish:
 
 ```sh
+DOCKERHOST=docker.cummings-online.local
+REPO=dev_environments
+HDE=helloweb_dev_environment
 VERSION=$(git describe --abbrev=0)  # tag without additional information
-docker build -t docker.cummings-online.local/helloweb_dev_environment:$VERSION
+docker build --push -t $DOCKERHOST/$REPO/$HDE:$VERSION .
 ```
 
 To retag from rc to production
