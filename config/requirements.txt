@@ -1,0 +1,6 @@
+mkdocs
+mkdocs-autorefs
+mkdocs-mermaid2-plugin
+mkdocs-material
+mkdocs-material-extensions
+mkdocstrings
